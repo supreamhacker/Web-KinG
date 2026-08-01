@@ -1,1 +1,22 @@
-colorama==0.4.6
+# Web KinG has zero third-party Python dependencies — it only uses
+# the Python standard library (subprocess, argparse, pathlib, json,
+# re, shlex, html, datetime, shutil).
+#
+# What it DOES need is the underlying CLI security tools installed
+# and on your $PATH. These are NOT pip packages — install them via
+# your OS package manager / go install / cargo install, e.g.:
+#
+#   sudo apt install nmap masscan nikto sqlmap hydra john hashcat \
+#       binwalk gdb radare2 exiftool foremost steghide dirb \
+#       enum4linux-ng medusa patator dnsenum fierce
+#
+#   go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+#   go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+#   go install github.com/projectdiscovery/httpx/cmd/httpx@latest
+#   go install github.com/projectdiscovery/katana/cmd/katana@latest
+#   go install github.com/ffuf/ffuf/v2@latest
+#   cargo install rustscan
+#
+#   # gem/go/other installs (check each tool's own docs for the current method):
+#   theHarvester, wpscan, arjun, paramspider, dalfox, wafw00f,
+#   amass, autorecon, crackmapexec / netexec, evil-winrm, ophcrack, volatility3
